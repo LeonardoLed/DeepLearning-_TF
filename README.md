@@ -10,3 +10,4 @@ C) A Attetion Mechanism Module
 
 The metrics reach out in this model, no present overfitting and we report the next table results:
 
+You can save de DB on https://www.dropbox.com/scl/fo/i08lhhdgzxpfoxd21bq5l/h?dl=0&rlkey=vnwyjt8hn6plj0tqeesel61nz

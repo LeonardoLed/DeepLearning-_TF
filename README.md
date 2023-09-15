@@ -7,9 +7,20 @@ b) A BiLSTM Module
 C) A Attetion Mechanism Module
 
 
+![arch](https://github.com/LeonardoLed/DeepLearning-_TF/assets/33387734/3257648e-890f-4a30-b607-47cd893732e3)
+
+
 
 The metrics reach out in this model, no present overfitting and we report the next table results:
 
+| Metric     | DeepReg      | DeepTFactor  |
+| :------------ |   :---:       | --------: |
+| Accuracy        | 0.9742         | 0.9773  |
+| Precision        | 0.9923         | 0.9656   |
+| Recall        | 0.977        | 0.9428  |
+| Specificity        | 0.9591         | 0.9888   |
+| F1-Score        | 0.9846         | 0.9541   |
+| MCC       | 0.9066         | 0.9392 |
 
 To Download Data, you can see the Data Dir, and you find:
 

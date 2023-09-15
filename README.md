@@ -1,4 +1,5 @@
 # DeepLearning-_TF
+# DeepReg
 The next code presents a new model hybrid to Predict Transcription Factors.
 
 It has the next architecture:

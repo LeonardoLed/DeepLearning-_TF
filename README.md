@@ -30,4 +30,10 @@ c) SC: Saccharomyces cerevisiae, genome and true predictions from DeepReg  <br/>
 d) ListID_TFs: The ID List from UNIPROT Swissprot Database to create training DB of TF  <br/>
 
 
+Inference
+
+To make your own predictions you only need as inpur the fasta file , the model and the weights (the .h5 file) and the tokenizer pickle.  <br/>
+Change your file fasta path in the main method (in .py script) in order to inference a new predictions. 
+
+
 

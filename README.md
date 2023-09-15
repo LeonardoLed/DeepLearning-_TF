@@ -19,7 +19,7 @@ b) NC: Neurospora crassa, genome and true predictions from DeepReg
 
 c) SC: Saccharomyces cerevisiae, genome and true predictions from DeepReg
 
-d) ListID_TFs: The ID List from UNIPROT Swissprot Database to create training DB 
+d) ListID_TFs: The ID List from UNIPROT Swissprot Database to create training DB of TF
 
 
 

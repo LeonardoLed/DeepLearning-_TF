@@ -27,8 +27,8 @@ To Download Data, you can see the Data Dir, and you find:
 a) AN: Aspergillus nidulans, genome and true predictions from DeepReg <br/>
 b) NC: Neurospora crassa, genome and true predictions from DeepReg  <br/>
 c) SC: Saccharomyces cerevisiae, genome and true predictions from DeepReg  <br/>
-d) ListID_TFs: The ID List from UNIPROT Swissprot Database to create training DB of TF  <br/>
-
+d) Experimental.dat: the file that contains all experimental TFs from AN, NC Y SC <br/>
+e) ListID_TFs: The ID List from UNIPROT Swissprot Database to create training DB of TF  <br/>
 
 Inference
 

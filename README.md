@@ -33,7 +33,7 @@ e) ListID_TFs: The ID List from UNIPROT Swissprot Database to create training DB
 Inference
 
 To make your own predictions you only need as inpur the fasta file , the model and the weights (the .h5 file) and the tokenizer pickle.  <br/>
-Change your file fasta path in the main method (in .py script) in order to inference a new predictions. 
+Change your file fasta path in the main method (in .py script) in order to inference new predictions. 
 
 
 

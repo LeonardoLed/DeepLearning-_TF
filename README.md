@@ -36,5 +36,13 @@ Inference
 To make your own predictions you only need as inpur the fasta file , the model and the weights (the .h5 file) and the tokenizer pickle.  <br/>
 Change your file fasta path in the main method (in .py script) in order to inference new predictions. 
 
+Training Model
+
+To traning model from Scratch, you can see "ScratchModel" .
+You can run the traning process to Deep Reg changes everything you want.
+
+
+
+
 
 

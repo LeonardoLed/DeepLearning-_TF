@@ -14,22 +14,17 @@ C) A Attetion Mechanism Module
 
 The metrics reach out in this model, no present overfitting and we report the next table results:
 
-| Metric     | DeepReg      | DeepTFactor  |
-| :------------ |   :---:       | --------: |
-| Accuracy        | 0.9742         | 0.9773  |
-| Precision        | 0.9923         | 0.9656   |
-| Recall        | 0.977        | 0.9428  |
-| Specificity        | 0.9591         | 0.9888   |
-| F1-Score        | 0.9846         | 0.9541   |
-| MCC       | 0.9066         | 0.9392 |
+| Metric     | DeepReg v2 | DeepReg v1      | DeepTFactor  |
+| :------------ |   :---:       |:---:       |--------: |
+| Accuracy    | 0.9828     | 0.9742         | 0.9773  |
+| Precision   | 0.9512      | 0.9923         | 0.9656   |
+| Recall      | 0.9638  | 0.977        | 0.9428  |
+| Specificity | 0.9876       | 0.9591         | 0.9888   |
+| F1-Score    | 0.9574    | 0.9846         | 0.9541   |
+| MCC      | 0.9405 | 0.9066         | 0.9392 |
 
-To Download Data, you can see the Data Dir, and you find:
-
-a) AN: Aspergillus nidulans, genome and true predictions from DeepReg <br/>
-b) NC: Neurospora crassa, genome and true predictions from DeepReg  <br/>
-c) SC: Saccharomyces cerevisiae, genome and true predictions from DeepReg  <br/>
-d) Experimental.dat: the file that contains all experimental TFs from AN, NC Y SC <br/>
-e) ListID_TFs: The ID List from UNIPROT Swissprot Database to create training DB of TF  <br/>
+DeepReg v2 is retrained with Trembl and SwissProt.
+On Trembl the 
 
 Inference
 

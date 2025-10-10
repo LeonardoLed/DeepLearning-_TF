@@ -24,7 +24,11 @@ The metrics reach out in this model, no present overfitting and we report the ne
 | MCC      | 0.9405 | 0.9066         | 0.9392 |
 
 DeepReg v2 is retrained with Trembl and SwissProt.
-On Trembl the 
+On Trembl we took all sequences with 4 and 5 score Annotation.
+We decided to take this new model to generalize and correct possible predictive errors.
+
+The TFNet is not comparable with this methods because the model metrics was taken for few proteoms examples.
+
 
 Inference
 

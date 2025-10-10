@@ -1,0 +1,150 @@
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ conv2d_input (InputLayer)      [(None, 1000, 21, 1  0           []                               
+                                )]                                                                
+                                                                                                  
+ conv2d_3_input (InputLayer)    [(None, 1000, 21, 1  0           []                               
+                                )]                                                                
+                                                                                                  
+ conv2d_6_input (InputLayer)    [(None, 1000, 21, 1  0           []                               
+                                )]                                                                
+                                                                                                  
+ conv2d_9_input (InputLayer)    [(None, 1000, 21, 1  0           []                               
+                                )]                                                                
+                                                                                                  
+ conv2d (Conv2D)                (None, 997, 1, 128)  10880       ['conv2d_input[0][0]']           
+                                                                                                  
+ conv2d_3 (Conv2D)              (None, 989, 1, 128)  32384       ['conv2d_3_input[0][0]']         
+                                                                                                  
+ conv2d_6 (Conv2D)              (None, 985, 1, 128)  43136       ['conv2d_6_input[0][0]']         
+                                                                                                  
+ conv2d_9 (Conv2D)              (None, 995, 1, 128)  16256       ['conv2d_9_input[0][0]']         
+                                                                                                  
+ batch_normalization (BatchNorm  (None, 997, 1, 128)  512        ['conv2d[0][0]']                 
+ alization)                                                                                       
+                                                                                                  
+ batch_normalization_3 (BatchNo  (None, 989, 1, 128)  512        ['conv2d_3[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ batch_normalization_6 (BatchNo  (None, 985, 1, 128)  512        ['conv2d_6[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ batch_normalization_9 (BatchNo  (None, 995, 1, 128)  512        ['conv2d_9[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ activation (Activation)        (None, 997, 1, 128)  0           ['batch_normalization[0][0]']    
+                                                                                                  
+ activation_3 (Activation)      (None, 989, 1, 128)  0           ['batch_normalization_3[0][0]']  
+                                                                                                  
+ activation_6 (Activation)      (None, 985, 1, 128)  0           ['batch_normalization_6[0][0]']  
+                                                                                                  
+ activation_9 (Activation)      (None, 995, 1, 128)  0           ['batch_normalization_9[0][0]']  
+                                                                                                  
+ dropout (Dropout)              (None, 997, 1, 128)  0           ['activation[0][0]']             
+                                                                                                  
+ dropout_3 (Dropout)            (None, 989, 1, 128)  0           ['activation_3[0][0]']           
+                                                                                                  
+ dropout_6 (Dropout)            (None, 985, 1, 128)  0           ['activation_6[0][0]']           
+                                                                                                  
+ dropout_9 (Dropout)            (None, 995, 1, 128)  0           ['activation_9[0][0]']           
+                                                                                                  
+ conv2d_1 (Conv2D)              (None, 994, 1, 128)  65664       ['dropout[0][0]']                
+                                                                                                  
+ conv2d_4 (Conv2D)              (None, 982, 1, 128)  131200      ['dropout_3[0][0]']              
+                                                                                                  
+ conv2d_7 (Conv2D)              (None, 982, 1, 128)  65664       ['dropout_6[0][0]']              
+                                                                                                  
+ conv2d_10 (Conv2D)             (None, 990, 1, 128)  98432       ['dropout_9[0][0]']              
+                                                                                                  
+ batch_normalization_1 (BatchNo  (None, 994, 1, 128)  512        ['conv2d_1[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ batch_normalization_4 (BatchNo  (None, 982, 1, 128)  512        ['conv2d_4[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ batch_normalization_7 (BatchNo  (None, 982, 1, 128)  512        ['conv2d_7[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ batch_normalization_10 (BatchN  (None, 990, 1, 128)  512        ['conv2d_10[0][0]']              
+ ormalization)                                                                                    
+                                                                                                  
+ activation_1 (Activation)      (None, 994, 1, 128)  0           ['batch_normalization_1[0][0]']  
+                                                                                                  
+ activation_4 (Activation)      (None, 982, 1, 128)  0           ['batch_normalization_4[0][0]']  
+                                                                                                  
+ activation_7 (Activation)      (None, 982, 1, 128)  0           ['batch_normalization_7[0][0]']  
+                                                                                                  
+ activation_10 (Activation)     (None, 990, 1, 128)  0           ['batch_normalization_10[0][0]'] 
+                                                                                                  
+ dropout_1 (Dropout)            (None, 994, 1, 128)  0           ['activation_1[0][0]']           
+                                                                                                  
+ dropout_4 (Dropout)            (None, 982, 1, 128)  0           ['activation_4[0][0]']           
+                                                                                                  
+ dropout_7 (Dropout)            (None, 982, 1, 128)  0           ['activation_7[0][0]']           
+                                                                                                  
+ dropout_10 (Dropout)           (None, 990, 1, 128)  0           ['activation_10[0][0]']          
+                                                                                                  
+ conv2d_2 (Conv2D)              (None, 979, 1, 128)  262272      ['dropout_1[0][0]']              
+                                                                                                  
+ conv2d_5 (Conv2D)              (None, 979, 1, 128)  65664       ['dropout_4[0][0]']              
+                                                                                                  
+ conv2d_8 (Conv2D)              (None, 979, 1, 128)  65664       ['dropout_7[0][0]']              
+                                                                                                  
+ conv2d_11 (Conv2D)             (None, 979, 1, 128)  196736      ['dropout_10[0][0]']             
+                                                                                                  
+ batch_normalization_2 (BatchNo  (None, 979, 1, 128)  512        ['conv2d_2[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ batch_normalization_5 (BatchNo  (None, 979, 1, 128)  512        ['conv2d_5[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ batch_normalization_8 (BatchNo  (None, 979, 1, 128)  512        ['conv2d_8[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ batch_normalization_11 (BatchN  (None, 979, 1, 128)  512        ['conv2d_11[0][0]']              
+ ormalization)                                                                                    
+                                                                                                  
+ activation_2 (Activation)      (None, 979, 1, 128)  0           ['batch_normalization_2[0][0]']  
+                                                                                                  
+ activation_5 (Activation)      (None, 979, 1, 128)  0           ['batch_normalization_5[0][0]']  
+                                                                                                  
+ activation_8 (Activation)      (None, 979, 1, 128)  0           ['batch_normalization_8[0][0]']  
+                                                                                                  
+ activation_11 (Activation)     (None, 979, 1, 128)  0           ['batch_normalization_11[0][0]'] 
+                                                                                                  
+ dropout_2 (Dropout)            (None, 979, 1, 128)  0           ['activation_2[0][0]']           
+                                                                                                  
+ dropout_5 (Dropout)            (None, 979, 1, 128)  0           ['activation_5[0][0]']           
+                                                                                                  
+ dropout_8 (Dropout)            (None, 979, 1, 128)  0           ['activation_8[0][0]']           
+                                                                                                  
+ dropout_11 (Dropout)           (None, 979, 1, 128)  0           ['activation_11[0][0]']          
+                                                                                                  
+ concatenate (Concatenate)      (None, 979, 1, 512)  0           ['dropout_2[0][0]',              
+                                                                  'dropout_5[0][0]',              
+                                                                  'dropout_8[0][0]',              
+                                                                  'dropout_11[0][0]']             
+                                                                                                  
+ conv2d_12 (Conv2D)             (None, 979, 1, 512)  262656      ['concatenate[0][0]']            
+                                                                                                  
+ batch_normalization_12 (BatchN  (None, 979, 1, 512)  2048       ['conv2d_12[0][0]']              
+ ormalization)                                                                                    
+                                                                                                  
+ activation_12 (Activation)     (None, 979, 1, 512)  0           ['batch_normalization_12[0][0]'] 
+                                                                                                  
+ max_pooling2d (MaxPooling2D)   (None, 489, 1, 512)  0           ['activation_12[0][0]']          
+                                                                                                  
+ time_distributed (TimeDistribu  (None, 489, 512)    0           ['max_pooling2d[0][0]']          
+ ted)                                                                                             
+                                                                                                  
+ bidirectional (Bidirectional)  (None, 256)          656384      ['time_distributed[0][0]']       
+                                                                                                  
+ dense (Dense)                  (None, 1)            257         ['bidirectional[0][0]']          
+                                                                                                  
+==================================================================================================
+Total params: 1,981,441
+Trainable params: 1,977,345
+Non-trainable params: 4,096
+__________________________________________________________________________________________________
